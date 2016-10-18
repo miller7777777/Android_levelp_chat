@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import static android.R.id.message;
 
-public class AuthActivity extends AppCompatActivity{
+public class AuthActivity extends AppCompatActivity implements View.OnClickListener{
 
     private EditText mLogin;
     private EditText mPassword;
@@ -32,19 +32,21 @@ public class AuthActivity extends AppCompatActivity{
         mPassword = (EditText) findViewById(R.id.edit_text_password);
         mSignIn = (Button) findViewById(R.id.sign_in_button);
         mSignUp = (Button) findViewById(R.id.sign_up_button);
-        mSignIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                signIn();
-            }
-        });
-        mSignUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(AuthActivity.this, RegisterActivity.class);
-                startActivity(i);
-            }
-        });
+//        mSignIn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                signIn();
+//            }
+//        });
+//        mSignUp.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(AuthActivity.this, RegisterActivity.class);
+//                startActivity(i);
+//            }
+//        });
+        mSignIn.setOnClickListener(this);
+        mSignUp.setOnClickListener(this);
 
 
 
@@ -67,19 +69,18 @@ public class AuthActivity extends AppCompatActivity{
         }
     }
 
-//    @Override
-//    public void onClick(View v) {
-//        switch (v.getId()){
-//
-//            case (R.id.sign_in_button):
-//                showMessage("111");
-//                signIn();
-//                break;
-//            case (R.id.sign_up_button):
-//                Intent i = new Intent(AuthActivity.this, RegisterActivity.class);
-//                startActivity(i);
-//                break;
-//        }
-//
-//    }
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+
+            case (R.id.sign_in_button):
+                signIn();
+                break;
+            case (R.id.sign_up_button):
+                Intent i = new Intent(AuthActivity.this, RegisterActivity.class);
+                startActivity(i);
+                break;
+        }
+
+    }
 }
