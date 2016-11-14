@@ -66,6 +66,8 @@ public class AuthActivity extends AppCompatActivity implements View.OnClickListe
             showMessage("Invalid login or password!");
         }else {
             showMessage("Success!");
+            Intent i = new Intent(AuthActivity.this, ProfileActivity.class);
+            startActivity(i);
         }
     }
 

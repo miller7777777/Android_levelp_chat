@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:padding="16dp">
+
+
+
+
+    <TextView
+        android:id="@+id/avatar1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/intro1"
+        android:text=""
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@id/avatar1"
+        android:ellipsize="end"
+        android:lines="1"
+        android:requiresFadingEdge="horizontal"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        tools:text="Usernamejfjifgfuhguhgughhgg"/>
+
+    <TextView
+        android:id="@+id/description1"
+        android:layout_below="@id/name1"
+        android:layout_toRightOf="@id/avatar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:requiresFadingEdge="horizontal"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        tools:text="Usernamejfjifgfuhguhgughhgg"/>
+
+</RelativeLayout>

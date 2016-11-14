@@ -8,4 +8,9 @@
     <string name="login_error">Username can not be empty</string>
     <string name="sign_up">Sign up</string>
     <string name="confirm_password">Confirm password</string>
+    <string name="description_text">Красив, умен, любитель поспать. Умеет читать и писать. Любит котов. Любит чай. Изучал несколько разновидностей восточных мордобойств, но не преуспел, предпочитает пистолеты.</string>
+    <string name="login_text">miller777@mail.ru</string>
+    <string name="login_hint">Login</string>
+    <string name="description_hint">Description</string>
+    <string name="logout">LogOut</string>
 </resources>
